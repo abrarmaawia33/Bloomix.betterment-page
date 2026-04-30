@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloomix — Grow at Your Own Pace</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">BLOOMIX</div>
+  <div class="nav-links">
+    <a href="#what">About</a>
+    <a href="#how">How it works</a>
+    <a href="#who">Who it's for</a>
+    <a href="#team">Team</a>
+  </div>
+  <a href="#" class="nav-app-btn" onclick="showToast('App launching soon!');return false;">
+    <i class="ri-smartphone-line"></i> Open App
+  </a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="stars" id="starsEl"></div>
+  <div class="cloud cl1"></div>
+  <div class="cloud cl2"></div>
+  <div class="cloud cl3"></div>
+  <div class="scene">
+    <svg viewBox="0 0 1400 240" preserveAspectRatio="xMidYMax meet"
+         style="position:absolute;bottom:0;left:0;width:100%;height:auto;max-height:200px;image-rendering:pixelated;">
+      <polygon points="0,240 0,140 100,55 200,135 340,30 480,115 620,20 780,100 920,35 1060,120 1200,40 1400,130 1400,240" fill="#2d6e40"/>
+      <polygon points="0,240 0,178 140,95 270,170 420,80 570,160 720,72 880,154 1040,86 1190,162 1400,92 1400,240" fill="#1e5030"/>
+      <rect x="0" y="212" width="1400" height="28" fill="#14381e"/>
+      <rect x="0" y="208" width="1400" height="6" fill="#1e5030"/>
+    </svg>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">Pixel Productivity App</div>
+    <h1 class="hero-h1">GROW AT YOUR<br><em>OWN PACE</em></h1>
+    <p class="hero-sub">A productivity app for <b>students &amp; unemployed youth</b> — built around your effort, not your consistency.</p>
+    <div class="hero-cta">
+      <a href="#" class="btn-main" onclick="showToast('App launching soon!');return false;">
+        <i class="ri-smartphone-line"></i> Open the App
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="mq">
+    <span class="mq-item">GROW AT YOUR OWN PACE <span class="mq-dot"></span></span>
+    <span class="mq-item">NO STREAK PUNISHMENT <span class="mq-dot"></span></span>
+    <span class="mq-item">PLANTS NEVER DIE <span class="mq-dot"></span></span>
+    <span class="mq-item">MENTAL HEALTH FIRST <span class="mq-dot"></span></span>
+    <span class="mq-item">FOR STUDENTS &amp; UNEMPLOYED YOUTH <span class="mq-dot"></span></span>
+    <span class="mq-item">GROW AT YOUR OWN PACE <span class="mq-dot"></span></span>
+    <span class="mq-item">NO STREAK PUNISHMENT <span class="mq-dot"></span></span>
+    <span class="mq-item">PLANTS NEVER DIE <span class="mq-dot"></span></span>
+    <span class="mq-item">MENTAL HEALTH FIRST <span class="mq-dot"></span></span>
+    <span class="mq-item">FOR STUDENTS &amp; UNEMPLOYED YOUTH <span class="mq-dot"></span></span>
+  </div>
+</div>
+
+<!-- WHAT IS BLOOMIX -->
+<section id="what" class="s-cream">
+  <div class="inner">
+    <div class="what-wrap">
+      <div class="what-logo-block reveal">
+        <div class="app-logo-box">
+          <img src="images/bloomix.jpg" alt="Bloomix Logo">
+        </div>
+        <div>
+          <div class="logo-name">BLOOMIX</div>
+          <div class="logo-tagline">grow at your own pace</div>
+        </div>
+      </div>
+      <div>
+        <div class="tag dk reveal">What is Bloomix</div>
+        <h2 class="sh2 dk reveal">AN APP THAT DOESN'T PUNISH YOU FOR BEING HUMAN</h2>
+        <p class="sbody reveal" style="margin-bottom:24px;">Most productivity apps reset your streak when you miss a day. That guilt spiral is the #1 reason people quit. Bloomix grows a pixel plant alongside you — based on your <strong>total effort</strong>, not perfect attendance.</p>
+        <div class="what-pills">
+          <div class="wpill reveal reveal-delay-1">
+            <div class="wpill-icon"><i class="ri-gamepad-line"></i></div>
+            <div><div class="wpill-t">Your tree never dies</div><p class="wpill-b">Go dormant, not deleted. One task brings full color back.</p></div>
+          </div>
+          <div class="wpill reveal reveal-delay-2">
+            <div class="wpill-icon"><i class="ri-bar-chart-grouped-line"></i></div>
+            <div><div class="wpill-t">Milestones, not streaks</div><p class="wpill-b">Growth is based on total active days — not consecutive ones.</p></div>
+          </div>
+          <div class="wpill reveal reveal-delay-3">
+            <div class="wpill-icon"><i class="ri-heart-line"></i></div>
+            <div><div class="wpill-t">Recovery over guilt</div><p class="wpill-b">Built on self-compassion research for burnout and anxiety.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="px-div"></div>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="s-teal">
+  <div class="inner">
+    <div class="tag lt reveal">How It Works</div>
+    <h2 class="sh2 lt reveal">THREE STEPS, NO PRESSURE</h2>
+    <div class="how-tabs reveal" style="margin-top:28px;">
+      <button class="how-tab active" onclick="setTab(0)"><i class="ri-todo-line"></i>&nbsp; Add Tasks</button>
+      <button class="how-tab" onclick="setTab(1)"><i class="ri-plant-line"></i>&nbsp; Watch Grow</button>
+      <button class="how-tab" onclick="setTab(2)"><i class="ri-refresh-line"></i>&nbsp; Miss a Day</button>
+    </div>
+    <div class="how-panels">
+      <div class="how-panel active" id="panel-0">
+        <div class="how-visual"><img src="images/taskss.png" alt="Task list preview"></div>
+        <div class="how-text-block">
+          <div class="how-step-num">01</div>
+          <div class="how-step-title">Add your daily tasks</div>
+          <p class="how-step-body">Set tasks that work for your life — studying, job hunting, exercising, going outside. No templates or rigid structures. You decide what progress looks like for you.</p>
+          <span class="how-step-code">Tasks reset automatically at 04:00</span>
+        </div>
+      </div>
+      <div class="how-panel" id="panel-1">
+        <div class="how-visual"><img src="images/trees.png" alt="Plant growth stages"></div>
+        <div class="how-text-block">
+          <div class="how-step-num">02</div>
+          <div class="how-step-title">Watch your plant grow</div>
+          <p class="how-step-body">Complete tasks and your pixel plant evolves through 5 stages over 90 days. Each milestone is permanent — your growth is archived forever in your public garden.</p>
+          <span class="how-step-code">Growth = min(90, total_active_days)</span>
+        </div>
+      </div>
+      <div class="how-panel" id="panel-2">
+        <div class="how-visual"><img src="images/gray.png" alt="Dormant tree becomes colourful"></div>
+        <div class="how-text-block">
+          <div class="how-step-num">03</div>
+          <div class="how-step-title">Miss a day? No problem</div>
+          <p class="how-step-body">Your plant turns grey — never deleted. It just waits. Come back whenever you're ready, complete one single task, and full color is instantly restored. No lectures, no resets.</p>
+          <span class="how-step-code">health_min = 0, never null</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="px-div"></div>
+
+<!-- WHO IT'S FOR -->
+<section id="who" class="s-cream">
+  <div class="inner">
+    <div class="tag dk reveal">Who It's For</div>
+    <h2 class="sh2 dk reveal">BUILT FOR PEOPLE<br>ALREADY TRYING HARD</h2>
+    <p class="sbody reveal" style="max-width:520px;">Not for the person who wakes up at 5am and never misses a day. For everyone else.</p>
+    <div class="who-grid">
+      <div class="who-card reveal reveal-delay-1">
+        <i class="ri-book-open-line who-card-icon"></i>
+        <div class="who-card-t">Students</div>
+        <p class="who-card-b">Balancing coursework, deadlines, and mental health. Bloomix fits around your schedule — not the other way around.</p>
+      </div>
+      <div class="who-card reveal reveal-delay-2">
+        <i class="ri-briefcase-line who-card-icon"></i>
+        <div class="who-card-t">Unemployed Youth</div>
+        <p class="who-card-b">Job hunting is exhausting. Bloomix keeps you moving without adding shame to an already hard season.</p>
+      </div>
+      <div class="who-card reveal reveal-delay-1">
+        <i class="ri-mental-health-line who-card-icon"></i>
+        <div class="who-card-t">Burnout Recovery</div>
+        <p class="who-card-b">When doing one thing a day is a win. Bloomix celebrates that — no comparison, no leaderboards.</p>
+      </div>
+      <div class="who-card reveal reveal-delay-2">
+        <i class="ri-emotion-line who-card-icon"></i>
+        <div class="who-card-t">Anxious Overthinkers</div>
+        <p class="who-card-b">Built on self-compassion research. The app never punishes you for being human — it just waits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="px-div"></div>
+
+<!-- GARDEN -->
+<section id="garden" class="sec-forest">
+  <div class="inner">
+    <div class="slabel light reveal">Your Archive</div>
+    <h2 class="sh2 light reveal">YOUR GARDEN,<br>FOREVER</h2>
+    <p class="reveal" style="font-size:15px;font-weight:300;color:#7aaa8a;line-height:1.9;max-width:520px;margin-top:8px;">
+      Every completed seasonal tree lives at your public garden URL — a read-only gallery of your resilience. Seasons never disappear.
+    </p>
+    <div class="garden-url reveal">
+      <span class="url-pulse"></span>
+      bloomix.app/garden/<span style="color:var(--blush);">yourname</span>
+    </div>
+    <div class="garden-grid">
+      <div class="gc reveal reveal-delay-1" onclick="showToast('Season 1 — Seedling archived!')">
+        <div class="gc-tree"><img src="images/season-1.png" alt="Season 1"></div>
+        <div class="gc-s">SEASON 1</div>
+        <div class="gc-d">18 days</div>
+      </div>
+      <div class="gc reveal reveal-delay-2" onclick="showToast('Season 2 — Sapling archived!')">
+        <div class="gc-tree"><img src="images/season-2.png" alt="Season 2"></div>
+        <div class="gc-s">SEASON 2</div>
+        <div class="gc-d">36 days</div>
+      </div>
+      <div class="gc reveal reveal-delay-3" onclick="showToast('Full Bloom archived!')">
+        <div class="gc-tree"><img src="images/season-3.png" alt="Full Bloom"></div>
+        <div class="gc-s">FULL BLOOM</div>
+        <div class="gc-d">54 days</div>
+      </div>
+      <div class="gc reveal reveal-delay-1" onclick="showToast('Season 4 archived!')">
+        <div class="gc-tree"><img src="images/season-4.png" alt="Archived"></div>
+        <div class="gc-s">ARCHIVED</div>
+        <div class="gc-d">75 days</div>
+      </div>
+      <div class="gc reveal reveal-delay-2" onclick="showToast('Legend status achieved!')">
+        <div class="gc-tree"><img src="images/season-5.png" alt="Legend"></div>
+        <div class="gc-s">LEGEND</div>
+        <div class="gc-d">90 days</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="px-div"></div>
+
+<!-- TEAM -->
+<section id="team" class="s-sand">
+  <div class="inner">
+    <div class="tag sd reveal">The Team</div>
+    <h2 class="sh2 dk reveal">MEET THE PEOPLE<br>BEHIND BLOOMIX</h2>
+    <p class="sbody reveal" style="max-width:460px;">A small group of students who built something we actually needed ourselves.</p>
+    <div class="team-grid">
+      <div class="team-card reveal reveal-delay-1">
+        <div class="team-avatar"><img src="images/aman-.png" alt="Muhammad Aman Ullah"></div>
+        <div class="team-info">
+          <div class="team-name">Muhammad Aman Ullah</div>
+          <div class="team-role">Project Lead & Lead Full-Stack Developer </div>
+          <div class="team-links">
+            <a href="https://github.com/Lichargic" title="GitHub"><i class="ri-github-line"></i></a>
+             </div>
+        </div>
+      </div>
+      <div class="team-card reveal reveal-delay-2">
+        <div class="team-avatar"><img src="images/aysa-.png" alt="Aysa Akther Muskan"></div>
+        <div class="team-info">
+          <div class="team-name">Aysa Akther Muskan</div>
+          <div class="team-role"> Documentation & Research Support </div>
+          <div class="team-links">
+            <a href="https://github.com/spid3rbyte" title="GitHub"><i class="ri-github-line"></i></a>
+             </div>
+        </div>
+      </div>
+      <div class="team-card reveal reveal-delay-1">
+        <div class="team-avatar"><img src="images/sai-.png" alt="Sai Sharanya"></div>
+        <div class="team-info">
+          <div class="team-name">Sai Sharanya</div>
+          <div class="team-role">UI Designer & Presentation Lead Creative & Promotion </div>
+          <div class="team-links">
+            <a href="https://github.com/sxsha777" title="GitHub"><i class="ri-github-line"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="team-card reveal reveal-delay-2">
+        <div class="team-avatar"><img src="images/abrar-.png" alt="Abrar Maawia"></div>
+        <div class="team-info">
+          <div class="team-name">Abrar Maawia</div>
+          <div class="team-role"> Social Media & Marketing Designer Support & Testing </div>
+          <div class="team-links">
+            <a href="https://github.com/abrarmaawia33" title="GitHub"><i class="ri-github-line"></i></a>
+           </div>
+        </div>
+      </div>
+      <div class="team-card reveal reveal-delay-1">
+        <div class="team-avatar"><img src="images/rinoa-.png" alt="Rinoa Eamilao Cabais"></div>
+        <div class="team-info">
+          <div class="team-name">Rinoa Eamilao Cabais</div>
+          <div class="team-role">Pixel Art Asset Designer </div>
+          <div class="team-links">
+            <a href="#" title="GitHub"><i class="ri-github-line"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="team-card reveal reveal-delay-2">
+        <div class="team-avatar"><img src="images/vince-.png" alt="Vince Michael Dizon"></div>
+        <div class="team-info">
+          <div class="team-name">Vince Michael Dizon</div>
+          <div class="team-role"> Music Composer & Audio Designer </div>
+          <div class="team-links">
+            <a href="#" title="GitHub"><i class="ri-github-line"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="team-card reveal reveal-delay-1">
+        <div class="team-avatar"><img src="images/vinz-.png" alt="Vinz Patrick"></div>
+        <div class="team-info">
+          <div class="team-name">Vinz Patrick</div>
+          <div class="team-role">QA & User Feedback Tester </div>
+          <div class="team-links">
+            <a href="#" title="GitHub"><i class="ri-github-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="s-forest cta-wrap">
+  <div class="cta-inner">
+    <h2 class="cta-h2 reveal">YOUR PLANT WAITS.<br><em>NO JUDGMENT.</em></h2>
+    <p class="cta-sub reveal">Early access is opening soon. Be the first to grow.</p>
+    <div class="reveal" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <button class="btn-cta" onclick="showToast('You are on the list!')">
+        <i class="ri-seedling-line"></i> Get Early Access
+      </button>
+    </div>
+    <p class="cta-note reveal">Academic prototype · Hosted on Vercel · Mental health tool for students &amp; unemployed youth</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-logo">BLOOMIX</div>
+  <div class="foot-links">
+    <a href="https://www.instagram.com/bloomix.betterment?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+      <i class="ri-instagram-line"></i> Instagram
+    </a>
+    <a href="#"><i class="ri-github-line"></i> GitHub</a>
+  </div>
+  <div class="foot-copy">2026 · Bloomix · A kinder productivity app for students &amp; unemployed youth · simulated purchase flow for prototype</div>
+</footer>
+
+<div id="toast">
+  <i class="ri-checkbox-circle-line"></i>
+  <span id="toast-msg"></span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
