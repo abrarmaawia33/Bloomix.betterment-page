@@ -184,7 +184,7 @@ section{padding:80px 5%;}
   background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
   padding:28px;display:flex;align-items:center;justify-content:center;min-height:180px;
 }
-.how-visual img{width:auto;max-width:100%;max-height:130px;display:block;margin:0 auto;image-rendering:pixelated;}
+.how-visual img{width:auto;max-width:100%;max-height:130px;display:block;margin:0 auto;image-rendering:pixelated; pointer-events: none;}
 .how-step-num{font-family:'Press Start 2P',monospace;font-size:26px;color:rgba(190,204,156,.18);margin-bottom:12px;}
 .how-step-title{font-size:15px;font-weight:700;color:var(--sage);margin-bottom:10px;}
 .how-step-body{font-size:13px;font-weight:300;color:#7aaab5;line-height:1.85;}
